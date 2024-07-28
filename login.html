@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+    }
+    .login-form {
+      width: 340px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-control, .btn {
+      min-height: 38px;
+      border-radius: 2px;
+    }
+    .btn {        
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .forgot-password {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* Optional CSS for ensuring modal is centered */
+    .modal-dialog {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form">
+    <form id="loginForm" action="#" method="post">
+      <h2>Log in</h2>       
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </div>
+      <div class="forgot-password">
+        <a href="fgpw.html">Forgot Password?</a>
+      </div>
+    </form>
+    <div class="register-link">
+      Don't have an account yet? <a href="daftar.html">Sign up</a>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Login Successful</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          You have logged in successfully.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script untuk menangani submit form login -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Mencegah form untuk submit
+
+      var username = document.getElementById('loginForm').elements['username'].value;
+      var password = document.getElementById('loginForm').elements['password'].value;
+
+      if (username === 'admin' && password === 'admin123') {
+        $('#successModal').modal('show'); // Tampilkan modal jika login berhasil
+
+        // Redirect to main page after closing modal
+        $('#successModal').on('hidden.bs.modal', function () {
+          window.location.href = 'basic.html'; // Ubah 'basic.html' sesuai dengan halaman utama Anda
+        });
+
+      } else {
+        alert('Username atau password salah!'); // Tampilkan alert jika login gagal
+      }
+    });
+  </script>
+</body>
+</html>

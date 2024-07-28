@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Belajar HTML</title>
+</head>
+<body>
+    <style>
+        .table-vertical {
+    table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px 20px;
+      }
+} 
+.table-horizontal {
+    table {
+        border-collapse: collapse;
+      }
+      th,td {
+        border: 1px solid black;
+        padding: 10px 20px;
+      }
+}
+
+.tb-negara-amerika {
+  table {
+    border-collapse: collapse;
+  }
+  th,td {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+}
+
+.tb-negara-indonesia {
+  table {
+    border-collapse: collapse;
+  }
+  th,td {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+}
+
+.tb-negara-border {
+  table {
+    border-collapse: collapse;
+  }
+  th,td {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+}
+    </style>
+    <!-- Belajar Buat List-->
+    <section class="#">
+        <h1>INI ADALAH NAVIGATION BAR DAN BOOKMARK</h1>
+        <p>Bookmark Ibarat Pergi Kehalaman Tertuju dengan a href menggunakan id Tujuan</p>
+        <p>Diawali Menggunakan Tanda #(Judul / id pembungkus)</p>
+        <ol>
+        <ul>
+        <a href="#SEJARAH" target="_self">SEJARAH</a>               <!-- target self membuka dihalaman yang sedang kita buka--> 
+        <a href="#KRITERIA" target="_self">KRITERIA</a>             <!-- target blank buka tab baru-->
+        <a href="#TAHUN KEJADIAN" target="self">TAHUN KEJADIAN</a>  <!-- target blank buka tab baru--> 
+        </ul>
+        </ol>
+    </section>
+      <!-- Belajar Bookmark-->
+        <nav class="Bookmark">
+        <h1>INI KONTEN ISI DARI BOOKMARK </h1>
+        <h1 id="SEJARAH"></h1>
+        <p>SEJARAH</p>
+        <p>SEJARAH</p>
+        <p>SEJARAH</p>
+        <p>SEJARAH</p>
+        <p>SEJARAH</p>
+        <p>SEJARAH</p>
+        <h1 id="KRITERIA"></h1>
+        <p>KRITERIA</p>
+        <p>KRITERIA</p>
+        <p>KRITERIA</p>
+        <p>KRITERIA</p>
+        <p>KRITERIA</p>
+        <p>KRITERIA</p>
+        <h1 id="TAHUN KEJADIAN"></h1>
+        <p>TAHUN KEJADIAN</p>   <aside>TAHUN 2021</aside> <!-- Kotak Side Bar, Disamping Konten Utama -->
+        <p>TAHUN KEJADIAN</p>   <aside>TAHUN 2022</aside> <!-- Kotak Side Bar, Disamping Konten Utama -->
+        <p>TAHUN KEJADIAN</p>   <aside>TAHUN 2023</aside> <!-- Kotak Side Bar, Disamping Konten Utama -->
+        <p>TAHUN KEJADIAN</p>   <aside>TAHUN 2024</aside> <!-- Kotak Side Bar, Disamping Konten Utama -->
+        <p>TAHUN KEJADIAN</p>   <aside>TAHUN 2025</aside> <!-- Kotak Side Bar, Disamping Konten Utama -->
+        <p>TAHUN KEJADIAN</p>   <aside>TAHUN 2026</aside> <!-- Kotak Side Bar, Disamping Konten Utama -->
+        <ol> <!-- Judol Order List-->
+        <!--
+        <ol type="I"></ol> Tergantung Numbering Yang Kita Inginkan
+        -->
+        <ul> <!-- Unorder List Memuat konten li-->
+            <h1>KONTEN TARGET</h1>
+            <p>TARGET SELF BUKA DI MAIN PAGE</p>
+            <li><a href="#SEJARAH" target="_self">SEJARAH</a></li>    <!-- Bookmark Pergi Kehalaman Tertuju dengan href menggunakan id Tujuan Target Buka Di main Page-->
+            <p>TARGET BLANK BUKA DI TAB BARU</p>
+            <li><a href="#KRITERIA" target="_blank">KRITERIA</a></li>    <!-- Bookmark Pergi Kehalaman Tertuju dengan href menggunakan id Tujuan Target Buka Di tab Baru-->
+            <li><a href="#TAHUN KEJADIAN" target="blank">TAHUN KEJADIAN</a></li>    <!-- Bookmark Pergi Kehalaman Tertuju dengan href menggunakan id Tujuan Target Buka Di tab Baru-->
+        </ul>
+        </ol>
+        </nav>
+
+        <!-- Pembungkus Elemen Start -->
+<div>                       <!-- Pembungkus Div Start-->
+    <nav>                   <!-- Pembungkus Nav Start-->        
+        <section>           <!-- Pembungkus Section Start-->
+              <main>        <!-- Pembungkus Main Start-->
+                <article>   <!-- Pembungkus Article Start-->
+        <!-- Pembungkus Elemen End -->
+                    <!-- Konten / Isi Heading Start-->
+                     <H1>HEADER</H1>
+                     <H2>HEADER</H2>
+                     <H3>HEADER</H3>
+                     <H4>HEADER</H4>
+                     <H5>HEADER</H5>
+                     <H6>HEADER</H6>
+                    <!-- Konten / Isi Heading End-->
+                    <!-- Konten / Isi Paragraf Start-->
+                     <p>Isi dari suatu artikel / keterangan</p>
+                    <!-- Konten / Isi Paragraf End-->
+                    <!-- Konten / Isi Bold/Italic/Baris Baru(Shift+Enter) Start-->
+                        <p>Isi dari suatu <b>artikel</b> tentang <i>Romusha</i> dengan hal terkait baca lebih lengkap mengenai apa itu
+                        <a href="https://www.google.com/" target="_blank">Romusha</a></p>
+                        <br> <!-- Baris Baru Shift+Enter-->
+                        <p>Isi dari suatu <b>artikel</b> tentang <i>Kerja Rodi</i> dengan hal terkait baca lebih lengkap mengenai apa itu
+                            <a href="https://www.google.com/" target="_blank">Kerja Rodi</a></p>
+                    <!-- Konten / Isi Bold/Italic/Baris Baru(Shift+Enter) End-->
+                    <!-- Konten / Isi Perpangkatan Bawah / Atas Start-->
+                     <sup style="position: relative; top: 50%; left: 50%; text-align: center; ">Tom</sup> <!-- Perpangkatan Atas-->
+                     <sub style="position: relative; top: 50%; left: 50%; text-align: center; ">Tom</sub> <!-- Perpangkatan Bawah-->
+                     <br>
+                    <!-- Konten / Isi Perpangkatan Bawah / Atas End-->
+                    <!-- Konten / Isi Start-->
+                        <img src="Sertif.png" style="padding: 0; margin: 0; position: relative; width: 250px; height: 150px; justify-content: center;" alt="SERTIF BELAJAR">
+                    <!-- Konten / Isi  End-->
+                </article>  <!-- Pembungkus Article End-->
+             </main>        <!-- Pembungkus Main End-->
+         </section>         <!-- Pembungkus Section End-->
+    </nav>                  <!-- Pembungkus Nav End-->
+</div>                      <!-- Pembungkus Div End-->
+    <section class="table-vertical">        <!-- Membuat Suatu Table Judul Vertical Atas ke Bawah -->
+        <h1>TABEL DATA DIRI VERTICAL</h1>
+        <table>                 <!-- Query Table-->
+            <tr>                <!-- Table Row / Membuat Baris Dalam Tabel-->
+                <th>Nama</th>   <!-- Isi Konten Table Head called th Baris Paling Atas-->
+                <th>Umur</th>   <!-- Isi Konten Table Head called th Baris Paling Atas-->
+                <th>Status</th> <!-- Isi Konten Table Head called th Baris Paling Atas-->
+            </tr>
+            <tr>
+            <td>Eve</td>        <!-- Isi Konten Table Th called td-->
+            <td>12</td>         <!-- Isi Konten Table Th called td-->
+            <td>Single</td>     <!-- Isi Konten Table Th called td-->
+            </tr>
+        </table>
+        <hr>                                  <!-- Garis Lurus Horizontal-->
+    </section>
+    <br>
+    <section class="table-horizontal">    
+        <h1>TABEL DATA DIRI HORIZONTAL</h1> 
+        <table>
+            <tr>
+                <th>Age</th>                  <!-- Membuat Suatu Table Judul Horizontal Menyamping -->
+                <td>16</td>
+                <td>9</td>
+            </tr>
+        </table>
+    </section>
+    <hr>                                      <!-- Garis Lurus Horizontal-->
+    <section class="tb-negara-amerika" id="tb-negara-vertical">
+        <h1>TABEL DAFTAR NEGARA AMERIKA VERTICAL</h1>
+    <table>                     <!-- Pembuatan Tabel Secara Detail -->
+        <thead>                 <!-- Kepala Tabel / Judul Start -->
+            <tr>
+                <th rowspan="2">Negara</th>             <!-- rowspan perintah menggabngkan kolom secara vertical-->
+                <th colspan="2">Ibu Kota</th>           <!-- rowspan perintah menggabngkan kolom secara horizontal-->
+                <th rowspan="2">Jumlah Penduduk</th>    <!-- rowspan perintah menggabngkan kolom secara vertical-->
+            </tr>
+            <th>Ibu Kota 1</th>                         <!-- Isi Dari Ibu Kota ada Ibu Kota 1 Karena di thead menggunakan colspan="2" jadi dia mengambil tabel secara horizontal sbnyk 2 baris-->
+            <th>Ibu Kota 2</th>                         <!-- Isi Dari Ibu Kota ada Ibu Kota 1 Karena di thead menggunakan colspan="2" jadi dia mengambil tabel secara horizontal sbnyk 2 baris-->
+        </thead>                <!-- Kepala Tabel / Judul End -->
+        <tbody>                 <!-- Body Tabel / Isi dari judul start -->
+               <tr>
+                <td>Amerika</td>
+                <td>Amerika</td>
+                <td>Amerika</td>
+                <td> 250.000.000</td>
+               </tr>
+               <tr>
+                <td>Amerika</td>
+                <td>Amerika</td>
+                <td>Amerika</td>
+                <td> 250.000.000</td>
+               </tr>
+               <tr>
+                <td>Amerika</td>
+                <td>Amerika</td>
+                <td>Amerika</td>
+                <td> 000.000.000</td>
+               </tr>
+        </tbody>                <!-- Body Tabel / Isi dari judul End -->
+        <tfoot>
+            <tr>
+                <th>Total Penduduk</th>
+                <th colspan="3">500.000.000</th>      <!-- colspan perintah menggabngkan kolom secara horizontal-->
+            </tr>
+        </tfoot>
+    </table>
+    <hr>                        <!-- Garis Lurus Horizontal-->
+    </section>
+    <section class="tb-negara-indonesia" id="tb-negara-horizontal">
+        <h1>TABEL DAFTAR NEGARA INDONESIA HORIZONTAL</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <td>Surya Adi Darmawan</td>
+                    <td>Tom Hansen</td>
+                    <td>Musasine</td>
+                </tr>
+                <tr>
+                    <th>Umur</th>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td colspan="3">60</td> <!-- colspan perintah menggabngkan kolom secara horizontal-->
+                </tr>
+            </tfoot>
+            </thead>
+        </table>
+    </section>
+    <section class="tb-negara-border" id="tb-negara-border">
+        <h1>TABEL BORDER HORIZONTAL</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="3">DATA DIRI</th>
+                </tr>
+                <tr>
+                    <th>Nama</th>
+                    <td>Surya Adi Darmawan</td>
+                    <td>Tom Hansen</td>
+                    <td>Musasine</td>
+                </tr>
+                <tr>
+                    <th>Umur</th>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td colspan="4">60</td> <!-- colspan perintah menggabngkan kolom secara horizontal-->
+                </tr>
+            </tfoot>
+            </thead>
+        </table>
+    </section>
+    <hr>     
+    <div class="login-form">                                                    <!-- Membungkus Dengan element div dengan class="login-form"-->
+    <h1>SELAMAT DATANG INI CARA MEMBUAT FORM</h1>
+    <form action="kriteria.html" method="get">                      <!-- action adalah tujuan setelah mengisi form akan kemana *harus ada button -->
+        
+        <button type="button"> Normal Button </button>  <!-- button tidak berfungsi seperti hal layak mengirim -->
+
+        <span class="type-url">
+        <P>tipe url</P>                                                            <!-- for - id sebuah entity untuk form-->
+        <label for=url">Masukan Link Ke Form</label>                               <!-- Melabeli Suato Form / Memberikan Keterangan kepada form -->
+        <input type="url" name="" id="url" placeholder="Enter your url here">       <!-- input suato form, place holder adalah bagian informasi suatu form-->
+        </span>
+
+        <span class="type-username">                                                <!-- Pembungkusan element pada form type-->
+        <p>tipe text</p>
+        <label for="name">Masukan Username</label>
+        <input type="text" name="" id="name" placeholder="Enter your username here">
+        </span>
+
+        <span class="type-email">                                                   <!-- Pembungkusan element pada form type-->
+        <P>tipe email</P>
+        <label for="email">Masukan Email</label>
+        <input type="email" name="" id="email" placeholder="Enter your email here">
+        </span>
+
+        <span class="type-password">                                                <!-- Pembungkusan element pada form type-->
+        <p>tipe password</p>
+        <label for="password">Masukan Link Password</label>
+        <input type="password" name="" id="password" placeholder="Enter your password here">
+        </span>
+
+        <span class="type-number">                                                  <!-- Pembungkusan element pada form type-->
+        <p>tipe number</p>  
+        <label for="nomor">Masukan Nomor</label>
+        <input type="number" name="" id="nomor" placeholder="Enter Your Number Here">
+        </span>
+
+        <span class="type-color">                                                   <!-- Pembungkusan element pada form type-->
+        <p>tipe color</p>
+        <label for="color">Masukan Warna Yang Anda Inginkan</label>
+        <input type="color" name="" id="color"> <!-- Gaperlu Placeholder -->
+        </span>
+        <br>
+        <span class="Sender">
+        <button type="submit">Batal</button>                                        <!-- type mempengaruhi action pada awal <form action=""> -->
+        <button type="submit">Kirim</button>                                        <!-- type mempengaruhi action pada awal <form action=""> -->
+        </span>
+        <br>
+        <hr style="width: 900px; position: relative; left: 20%;">
+        <!-- Alternatif Button Bisa Pakai Methode Input -->
+        <span class="button-input">
+            <p>INI ADALAH BUTTON DARI INPUT TIDAK INTERAKSI NORMAL BUTTON</p>
+            <input type="button" value="Batal">                                     <!-- type button hanyalah button biasa tidak interaksi apapun-->
+            <input type="button" value="Kirim">                                     <!-- type button hanyalah button biasa tidak interaksi apapun-->
+        </span>
+
+        <span class="button-input-submit">
+            <p>INI ADALAH BUTTON SUBMIT INTERAKSI</p>
+            <input type="submit" value="Batal">                                     <!-- type submit merupakan button interaksi tertuju -->
+            <input type="submit" value="Kirim">                                     <!-- type submit merupakan button interaksi tertuju -->
+        </span>
+
+    </form>                         <!-- Garis Lurus Horizontal-->
+    </div>  
+<hr>
+    <!-- Bootstrap -->
+     <!-- Image menggunakan Bootstrap-->
+    <div class="mb-3">
+        <h1>Ini Choose File Menggunakan Bootstrap</h1>
+        <label for="formFile" class="form-label">Default file input example</label>
+        <input class="form-control" type="file" id="formFile" style="width: 245px;">
+      </div>
+
+      <!-- Pick color menggunakan Bootstrap-->
+    <div class="mb-3-color">
+        <h1>Ini Choose File Color Menggunakan Bootstrap</h1>
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+      <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+    </div>
+
+    <h1>Ini Search Bar Menggunakan Bootstrap</h1>
+        <div class="mb-3">
+          <label for="exampleDataList" class="form-label">Search Bar</label>
+          <div class="d-flex">
+            <input class="form-control me-2" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." style="width: 240px;">
+            <datalist id="datalistOptions">
+              <option value="Indonesia">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+            <button type="submit" class="btn btn-primary" id="button-enter">Enter</button>
+          </div>
+        </div>
+      <!-- Navbar -->
+      <div class="container">
+        <a href="login.html" target="_blank">Login</a>
+        <a href="daftar.html" target="_blank">Daftar</a>
+      </div>
+      <hr>
+      <!-- Tutorial Cara Membuat Radio Button -->
+       <!-- Part 1 -->
+      
+    <div class="Bljr-Radio-Button">
+      <h1>Radio Button</h1>
+      <form action="/order">
+        <label for="">Baju</label>
+        <div class="Radio-Button-pt1">
+        <input type="radio" name="Baju" id="" value="Kemeja" checked> <label for="">Kemeja</label> <!-- checked untuk default pilihan -->
+        <input type="radio" name="Baju" id="" value="Kaos"> <label for="">Kaos</label>
+        </div>
+        <!-- Basic Button Html  -->
+        <!-- <button type="submit">Order</button> (Basic Button Html)  -->
+
+    </div>
+    <!-- Radio Button / Dropdown -->
+    <div class="Radio-Button-pt2">
+        <label for="">Ukuran</label>
+        <select name="Ukuran" id="Pilih-Ukuran">
+            <option value="-" selected>-</option> <!-- selected untuk default pilihan -->
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+    </div>
+    <!-- Radio Button / Checkbox -->
+     <div>
+        <label for="term">Sesuai Pesanan</label>
+        <input type="checkbox" name="term" id="term" value="true">
+     </div>
+     <!-- Input Text Area -->
+     <div>
+        <br>
+        <p>
+        <label for="notes">Catatan</label>
+        </p>
+        
+        <textarea name="notes" id="" cols="50" rows="5"></textarea>
+     </div>
+        <!-- Button From Bootstrap -->
+        <button type="submit" class="btn btn-primary">Order</button>
+    </form>
+    </div>
+    <hr>
+    <!-- Validation -->
+     <div>
+    <h1>Validasi</h1>
+    <form action="valid">
+        <input type="text" name="input" required minlength="6" maxlength="12">
+        <input type="number" name="number" required min="5" max="13">
+        <button type="submit">Enter</button>
+    </form>
+    </div>
+</body>
+<footer>Copyright Tom<sup>&copy;</sup>      <!-- Kaki / Penutup Website -->
+</footer>
+</html>
